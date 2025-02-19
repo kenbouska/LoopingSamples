@@ -2,11 +2,17 @@
 using namespace std;
 int main()
 {
-    int x = 20;
-    do
+    cout << "The Multiplication Table" << endl;
+    cout << "========================" << endl;
+    for (int r=1; r<=12; r++)
     {
-        cout << x << endl;
-        x++;
-    } while (x <= 10);
-}//it will return 20 once since the while (x <= 10) is after the {}
+        cout << "Table of " << r << endl;
+        cout << "===========" << endl;
+        for (int c=1; c<=12; c++)
+        {
+            cout << r << " x " << c << " ==> " << (r * c) << endl;
+        }
+    }
+}
 
+//generate multiplication table from 1 to 12 with r and c values in a nested loop using the above framework 
