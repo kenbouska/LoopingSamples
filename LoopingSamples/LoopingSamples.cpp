@@ -4,14 +4,19 @@ int main()
 {
     cout << "The Multiplication Table" << endl;
     cout << "========================" << endl;
-    for (int r=1; r<=12; r++)
+    int r = 1;
+    int c = 1;
+    while(r<=12)
     {
         cout << "Table of " << r << endl;
         cout << "===========" << endl;
-        for (int c=1; c<=12; c++)
+        while(c<=12)
         {
             cout << r << " x " << c << " ==> " << (r * c) << endl;
+            c++;
         }
+        c = 1;
+        r++;
     }
 }
 
